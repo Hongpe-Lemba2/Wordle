@@ -3,22 +3,25 @@ import flet as ft
 def IndexView(page:ft.Page, params):
     def CreateAppBar():
         app_bar = ft.AppBar(
-            leading=ft.Image("images/csc_logo_100.png"),
-            leading_width=40,
-            title=ft.Text("Flet Template"),
-            #center_title=False,
+
+            title=ft.Text("Wordle",font_family="playwrite",size=45),
+            center_title=True,
             bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST,
+            toolbar_height=150,
             actions=[
-                ft.IconButton(ft.Icons.RESTART_ALT, on_click=restart_clicked),
-                ft.IconButton(ft.Icons.FILTER_3),
+                ft.IconButton(ft.Icons.RESTART_ALT, on_click=restart_clicked,icon_size=40),
+                ft.IconButton(ft.Icons.LIGHTBULB,icon_size=40,on_click=hint),
 
             ],
         )
         return app_bar
-
+    def hint(e):
+        dlg =ft.AlertDialog(title=ft.Text("Sorry No Hint for You :-} "))
+        page.open(dlg)
     def restart_clicked(e):
-         dlg = ft.AlertDialog(title=ft.Text("You clicked restart"))
+         dlg = ft.AlertDialog(title=ft.Text("New Game!"))
          page.open(dlg)
+
     def btn_question1_clicked(e):
         page.go("/question/1")
 
@@ -28,19 +31,47 @@ def IndexView(page:ft.Page, params):
     def btn_simple_clicked(e):
         page.go("/simple_view")
 
-    txt = ft.Text("Welcome to the Flet Template", font_family="playwrite")
-    col_right = ft.Row(controls=[txt], alignment=ft.MainAxisAlignment.END)
-    btn_question1 = ft.ElevatedButton("Question1", on_click=btn_question1_clicked)
-    btn_question2 = ft.ElevatedButton("Question2", on_click=btn_question2_clicked)
-    btn_simple = ft.ElevatedButton("Simple View", on_click=btn_simple_clicked)
-    img_1 = ft.Image(src="images/m1.jpg", width=300)
+
+
+
+    #btn_question1 = ft.ElevatedButton("Question1", on_click=btn_question1_clicked)
+    #btn_question2 = ft.ElevatedButton("Question2", on_click=btn_question2_clicked)
+    #btn_simple = ft.ElevatedButton("Simple View", on_click=btn_simple_clicked)
+
     appbar = CreateAppBar()
+
+    def build_board(rows=5, cols=5):
+        board = ft.Column()
+
+        for _ in range(rows):
+            row = ft.Row(alignment=ft.MainAxisAlignment.CENTER)
+
+            for _ in range(cols):
+
+                row.controls.append(
+                    ft.Container(
+                        width=75,
+                        height=75,
+                        bgcolor=ft.Colors.BLUE_GREY_900,
+                        border_radius=10
+
+                    )
+                )
+            board.controls.append(row)
+        return board
+
+    Guess = ft.TextField(label="Guess The Word",max_length=5,width=250)
+
+
 
     page.views.append(ft.View(
         "/",
-        [appbar, col_right, btn_question1, btn_question2, btn_simple, img_1],
+        [appbar, build_board(),Guess ],
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
 
     )
     )
     page.update()
+
+
+
