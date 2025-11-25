@@ -1,0 +1,3 @@
+BRISK,"Quick, with a hint of coldness."
+GLADE,Where the forest opens its eyes.
+TWINE,Thin strength wrapped around itself.

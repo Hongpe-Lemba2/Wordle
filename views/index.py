@@ -1,4 +1,5 @@
 import flet as ft
+from mypack import  misc
 
 def IndexView(page:ft.Page, params):
     def CreateAppBar():
@@ -61,9 +62,8 @@ def IndexView(page:ft.Page, params):
         return board
 
     Guess = ft.TextField(label="Guess The Word",max_length=5,width=250)
-
-
-
+    all_words = misc.ReadCSV("data/wordle_words.txt")
+    print(all_words)
     page.views.append(ft.View(
         "/",
         [appbar, build_board(),Guess ],
