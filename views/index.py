@@ -48,13 +48,15 @@ def IndexView(page:ft.Page, params):
             row = ft.Row(alignment=ft.MainAxisAlignment.CENTER)
 
             for _ in range(cols):
-
+                txt = ft.Text("A", color=ft.Colors.WHITE, size=28)
                 row.controls.append(
                     ft.Container(
-                        width=75,
-                        height=75,
+                        width=45,
+                        height=45,
                         bgcolor=ft.Colors.BLUE_GREY_900,
-                        border_radius=10
+                        border_radius=10,
+                        alignment=ft.alignment.center,
+                        content=txt
 
                     )
                 )
