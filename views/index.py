@@ -50,7 +50,7 @@ def IndexView(page:ft.Page, params):
                 boxes[r][c].bgcolor = ft.Colors.BLUE_GREY_700
         print("Answer:", Answer)
         page.update()
-        dlg = ft.AlertDialog(title=ft.Text("New Game started!",font_family="font2",size=30),)
+        dlg = ft.AlertDialog(title=ft.Text("New Game started!",font_family="font3",size=30),)
         page.open(dlg)
 
 
@@ -167,7 +167,7 @@ def IndexView(page:ft.Page, params):
             #board.controls[current_row].controls[i].rotate.angle += 2 * 3.14
             #box_txt[current_row][i].rotate.angle += 2 * 3.14
             page.update()
-            await asyncio.sleep(0.4)
+            await asyncio.sleep(0.36)
 
         """answer_list = list(Answer)
         color_list = ["dark"] * cols
@@ -262,12 +262,12 @@ def IndexView(page:ft.Page, params):
 
 
     correct_sfx = ft.Audio(
-        src="Audio/correct2.wav",
+        src="Audio/correct3.wav",
         volume=0.9,
         autoplay=False,
     )
     wrong_sfx = ft.Audio(
-        src="Audio/wrong1.wav",
+        src="Audio/wrong3.wav",
         volume=0.9,
         autoplay=False,
     )
