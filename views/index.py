@@ -154,13 +154,19 @@ def IndexView(page:ft.Page, params):
 
         for i, ch in enumerate(guess):
             boxes_txt[current_row][i].value = ch
+            if guess[i] == Answer[i]:
+                board.controls[current_row].controls[i].bgcolor = "GREEN"
+            elif ch in Answer:
+                board.controls[current_row].controls[i].bgcolor = "YELLOW"
+            else:
+                board.controls[current_row].controls[i].bgcolor = "GREY"
+
             #board.controls[current_row].controls[i].rotate.angle += 2 * 3.14
-            board.controls[current_row].controls[i].bgcolor = "GREY"
             #box_txt[current_row][i].rotate.angle += 2 * 3.14
             page.update()
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(0.4)
 
-        answer_list = list(Answer)
+        """answer_list = list(Answer)
         color_list = ["dark"] * cols
 
         for i in range(cols):
@@ -183,7 +189,7 @@ def IndexView(page:ft.Page, params):
             elif color == "yellow":
                 box.bgcolor = ft.Colors.YELLOW
             else:
-                box.bgcolor = ft.Colors.BLUE_GREY_900
+                box.bgcolor = ft.Colors.BLUE_GREY_900 """
 
         if guess == Answer:
             message.value = f" Correct! The word was {Answer}."
@@ -239,14 +245,18 @@ def IndexView(page:ft.Page, params):
 
     Answer, hint = random.choice(word_list)
 
+
+
+
+
     correct_sfx = ft.Audio(
         src="Audio/correct2.wav",
-        volume=0.5,
+        volume=0.9,
         autoplay=False,
     )
     wrong_sfx = ft.Audio(
         src="Audio/wrong1.wav",
-        volume=0.5,
+        volume=0.9,
         autoplay=False,
     )
 
