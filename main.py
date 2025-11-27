@@ -6,13 +6,14 @@ from views.simple_view import SimpleView
 def main(page: ft.Page):
   page.title = "CS Project 2025 - Class 12 A Sci "
   page.expand=True
+
   page.bgcolor = "#020617"
   page.fonts = {
     "Kanit": "https://raw.githubusercontent.com/google/fonts/master/ofl/kanit/Kanit-Bold.ttf",
     "playwrite": "fonts/playwrite.ttf",
       "font1":"fonts/PartyClash.otf",
       "font2":"fonts/Bromolek.otf",
-      "font3":"Retro Block.ttf"
+      "font3":"fonts/MedievalSharp-Regular.ttf",
   }
 
   def route_change(route):

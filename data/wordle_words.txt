@@ -1,7 +1,15 @@
-BRISK,"Quick, with a hint of coldness."
-GLADE,Where the forest opens its eyes.
-TWINE,Thin strength wrapped around itself.
-APPLE,A fruit
+BRISK, Quick, with a hint of coldness.
+GLADE, Where the forest opens its eyes.
+TWINE, Thin strength wrapped around itself.
+APPLE, A fruit.
+LAUGH, Joy escaping loudly.
+CHEER, Happiness with a voice.
+BLEND, When differences get along.
+DRINK, A liquid’s journey inward.
+SOUND, Air trembling with meaning.
+SLEEP, A doorway where the day steps back.
+BRUSH, A tool that tidies what’s wild.
+PULSE, Life knocking from the inside.
 CRISP, A snap of freshness on the tongue.
 GLINT, A tiny flash where light finds an edge.
 EMBER, A small glow that refuses to go out.
@@ -25,3 +33,96 @@ DRIFT, Movement so lazy it feels like thinking.
 STONE, A memory the earth decided to keep.
 QUIET, Sound holding its breath for a moment.
 SCENT, A memory that travels through the air.
+HONEY, Sunshine stored in sweetness.
+BERRY, A tiny vessel of summer.
+FERNS, Green curled thoughts of the forest.
+WAVES, Water breathing in and out.
+FLARE, Light suddenly remembering to shine.
+CHASE, Momentum wearing sneakers.
+PERCH, A place small creatures call home.
+GLEAM, Light stretching out to be noticed.
+PLUME, A feather caught in its own elegance.
+TANGY, Flavor that wakes up your tongue.
+BRINE, The ocean’s salty handshake.
+DWELL, Staying long enough to be part of a place.
+TIDAL, Pulled by the moon’s quiet insistence.
+VAPOR, Water becoming dreamlike.
+RUSTY, Time’s fingerprints on metal.
+WISPY, Thin things trying not to disappear.
+THORN, A plant’s small warning.
+GLOOM, Darkness thinking too hard.
+PRISM, Glass teaching light to dance.
+FABLE, A story that grew legs.
+WHISK, Movement that blends things together.
+GLIDE, Moving like you’re not touching the world.
+MORPH, Changing without asking permission.
+MAPLE, A tree famous for its sweetness.
+FLICK, Motion measured in milliseconds.
+PARCH, Dryness asking for mercy.
+BLOOM, A flower’s first confident breath.
+DEWED, Morning kissed by droplets.
+PLUCK, Removing gently but quickly.
+HARSH, Edges that haven’t been softened.
+GRAIN, Small pieces that build big things.
+RASPY, A voice with gravel in it.
+SWEEP, Clearing space with movement.
+FLUTE, Air learning how to sing.
+GRACE, Movement that feels like kindness.
+LOFTY, Higher than your expectations.
+SWEPT, Moved all at once.
+PERIL, Danger with a heartbeat.
+THUMP, A sound with weight behind it.
+LATCH, A small guardian of a door.
+TRAIL, The earth remembering your steps.
+MARSH, Land unsure if it’s water.
+HAVEN, A place where fear gets tired.
+DUSKY, Colors trying to fall asleep.
+BLADE, Sharpness shaped with purpose.
+FROTH, Water wearing bubbles.
+STEEP, A slope that challenges your legs.
+CLEFT, A split shaped by time.
+CRUSH, Pressure with feelings.
+STILT, Legs made taller on purpose.
+THRUM, Sound vibrating in place.
+SNARE, A trap waiting politely.
+SPOOL, Thread staying patient.
+PRONE, Lying down, listening to gravity.
+SMELL, A quiet story your nose can read.
+TASTE, A small adventure on the tongue.
+TOUCH, The language spoken by skin.
+HEART, The drum keeping time inside you.
+DREAM, The mind wandering without permission.
+LIGHT, The place where darkness gives up.
+SWEET, Softness that knows how to sparkle.
+QUIRK, A small habit with personality.
+BREAK, When something stops before it should.
+SHARE, Letting your world overlap with another’s.
+SMOKE, Air wearing a memory of fire.
+BLOOD, The river that never rests.
+WRITE, Thoughts turning into symbols.
+CARRY, Moving something that trusts you.
+CHAIR, A small pause shaped for sitting.
+TABLE, Where conversations decide to land.
+SLICE, A thin piece of a bigger moment.
+SWEAR, Words spoken with too much honesty.
+GRASS, The earth’s soft green carpet.
+SHINE, Light trying to show off.
+BLANK, A space waiting for ideas.
+HELLO, A tiny doorway into a new moment.
+THANK, Gratitude made brief.
+START, The moment potential wakes up.
+STAND, When your body chooses vertical.
+THINK, The brain arranging its furniture.
+SMILE, Happiness wearing your face.
+BRAVE, Fear unwilling to stop you.
+CHIME, Time ringing politely.
+TIGHT, When space hugs a little too hard.
+BLINK, Eyes taking tiny naps.
+CLIMB, Moving upward with intention.
+CLEAR, When confusion finally evaporates.
+SHARP, An edge that knows its purpose.
+GRANT, A yes with authority.
+KNOWN, Familiarity wearing confidence.
+EVERY, The part that includes all parts.
+BELOW, Where things settle quietly.
+AWAKE, When sleep forgets to hold you.
