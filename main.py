@@ -34,4 +34,4 @@ def main(page: ft.Page):
   page.on_view_pop = view_pop
   page.go(page.route)
 #ft.app(target=main)
-ft.app(target=main,assets_dir="assets",)
+ft.app(target=main,assets_dir="assets",view=ft.AppView.WEB_BROWSER)
