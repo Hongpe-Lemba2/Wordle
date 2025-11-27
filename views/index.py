@@ -15,7 +15,7 @@ def IndexView(page:ft.Page, params):
                           ],
                          alignment=ft.MainAxisAlignment.CENTER,),
 
-            bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST,
+            bgcolor= "#1A1C1E",
             toolbar_height=120,
 
 
@@ -287,7 +287,7 @@ def IndexView(page:ft.Page, params):
         [appbar, board, Guess, message,
          ft.Row([winstreak,next_game_btn
 
-        ],alignment=ft.MainAxisAlignment.CENTER,)],
+        ],alignment=ft.MainAxisAlignment.CENTER,)],bgcolor = "#0f1115",
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
 
     )
