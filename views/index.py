@@ -4,19 +4,20 @@ import random
 import asyncio
 
 
-def IndexView(page:ft.Page, params):
+def IndexView(page: ft.Page, params):
+    tile_size = params.get("tile_size")
     def CreateAppBar():
         app_bar = ft.AppBar(
 
             title=ft.Row([ft.Text("Wordle ",font_family="font2",size=45),
                           ft.IconButton(ft.Icons.RESTART_ALT, on_click= restart_clicked, icon_size=40),
-                          ft.IconButton(ft.Icons.LIGHTBULB, icon_size=40, on_click=hint)
+                          ft.IconButton(ft.Icons.LIGHTBULB, icon_size=40, on_click=show_hint)
 
                           ],
                          alignment=ft.MainAxisAlignment.CENTER,),
 
             bgcolor= "#1A1C1E",
-            toolbar_height=120,
+            toolbar_height=110,
 
 
         )
@@ -25,7 +26,7 @@ def IndexView(page:ft.Page, params):
 
 
 
-    def hint(e):
+    def show_hint(e):
         dlg =ft.AlertDialog(title=ft.Text(hint,font_family="font3",size=35),)
         page.open(dlg)
 
@@ -96,7 +97,7 @@ def IndexView(page:ft.Page, params):
 
 
 
-    def build_board(rows, cols):
+    def build_board(rows, cols,tile_size):
         board = ft.Column()
 
         boxes_txt = []
@@ -111,13 +112,13 @@ def IndexView(page:ft.Page, params):
                 txt = ft.Text(
                     value="",
                     color=ft.Colors.WHITE,
-                    size=48,
+                    size=tile_size * 0.5,
                     weight=ft.FontWeight.BOLD,
                     text_align=ft.TextAlign.CENTER,
                 )
                 box = ft.Container(
-                    width=75,
-                    height=75,
+                    width=tile_size,
+                    height=tile_size,
 
                     bgcolor=ft.Colors.BLUE_GREY_900,
                     border_radius=20,
@@ -238,7 +239,7 @@ def IndexView(page:ft.Page, params):
     current_row = 0
     rows = 5
     cols = 5
-    board, boxes, boxes_txt = build_board(rows, cols)
+    board, boxes, boxes_txt = build_board(rows, cols, tile_size)
     appbar = CreateAppBar()
 
 
@@ -279,7 +280,7 @@ def IndexView(page:ft.Page, params):
          ft.Row([winstreak,next_game_btn
 
         ],alignment=ft.MainAxisAlignment.CENTER,)],bgcolor = "#0f1115",
-        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,scroll=ft.ScrollMode.AUTO
 
     )
     )
