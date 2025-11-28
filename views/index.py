@@ -218,6 +218,7 @@ def IndexView(page: ft.Page, params):
                 wrong_sfx.play()
 
         Guess.value = ""
+        Guess.focus()
 
         page.update()
         return wins
